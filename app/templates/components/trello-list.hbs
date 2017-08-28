@@ -1,0 +1,20 @@
+<div class='col-md-4'>
+  <div id='list-{{list.id}}' class='todo-list panel panel-primary'>
+    <div class='panel-heading'>
+      {{list.name}}
+      <div class='pull-right delete' {{action 'deleteList' list}}>
+        <span class='glyphicon glyphicon-remove' aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class='panel-body'>
+      <div class='list-group'>
+
+        {{#each list.items as |item index|}}
+          {{trello-item item=item selectItem='selectItem'}}
+        {{/each}}
+
+      </div>
+      {{create-item newItem=newItem createItem='createItem' listId=list.id}}
+    </div>
+  </div>
+</div>

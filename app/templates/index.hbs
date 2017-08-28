@@ -1,0 +1,23 @@
+<ul>
+  {{#each model as |list|}}
+    {{trello-list
+      list=list
+      modalEnabled=modalEnabled
+      newItem=newItem
+      selectItem='selectItem'
+      createItem='createItem'}}
+  {{/each}}
+
+  {{create-list newList=model createList='createList'}}
+
+</ul>
+
+{{#if modalEnabled}}
+
+  {{details-view
+    selectedItem=selectedItem
+    newItem=newItem
+    toggleModal='toggleModal'
+    deleteItem='deleteItem'}}
+
+{{/if}}

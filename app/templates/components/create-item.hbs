@@ -1,0 +1,18 @@
+<p class='form-group'>
+  {{#if input}}
+    <div class='input-group'>
+      <form {{action 'createItem' newItem listId on='submit'}} id='newItem'>
+        {{input value=newItem.name placeholder='Item Name' class='form-control'}}
+      </form>
+      <span {{action 'editing'}} class='input-group-addon'>
+        <span class='glyphicon glyphicon-remove' aria-hidden='true'></span>
+      </span>
+    </div>
+
+  {{else}}
+    <button {{action 'editing'}} class='btn btn-primary'>
+      Add item to list {{listId}}
+    </button>
+  {{/if}}
+
+</p>

@@ -1,0 +1,122 @@
+@import "bootstrap";
+
+html {
+  height: 100%;
+}
+
+.panel-primary > .panel-heading {
+    color: #fff;
+    background-color: #fb9fa4;
+    border-color: #fb9fa4;
+}
+
+.panel-info > .panel-heading {
+    color: #fff;
+    background-color: #fb9fa4;
+    border-color: #fb9fa4;
+}
+
+.modal-title span.button:hover {
+    color: #965f62;
+}
+
+.modal-title .pull-left span:hover {
+    color: #965f62;
+}
+
+.panel-primary {
+  border-color: #fb9fa4;
+}
+
+.panel-info {
+    border-color: #fb9fa4;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #fb9fa4;
+    border-color: #fb9fa4;
+}
+.btn-primary:hover{
+    background-color: #e18f93;
+    border-color: #e18f93;
+}
+
+.btn.btn-primary:active{
+    background-color: #e18f93;
+    border-color: #e18f93;
+}
+
+.page-header{
+  padding-left: 6vh;
+}
+
+// .todo-list .delete span {
+//   cursor: pointer;
+// }
+
+.todo-list .delete span:hover {
+  color: #965f62;
+}
+
+#detail-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#detail-view .name-change {
+  height: 20px;
+}
+
+.todo-list {
+  min-height: 250px;
+}
+
+.modal-fade {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-box {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  height: 50%;
+  width: 50%;
+}
+
+.modal-title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height:30px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #fb9fa4;
+  color: #fff;
+}
+
+// .modal-title span {
+//   cursor: pointer;
+// }
+
+.modal-title span:hover {
+  color: #000;
+}
+
+.modal-body {
+  margin-top: 40px;
+}
+
+// .modal-body {
+//   cursor: pointer;
+// }
+
+

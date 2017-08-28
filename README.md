@@ -1,7 +1,6 @@
 # tiny-trello
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is an Ember version of Trello in small format. The user should be able to add a card to the board by clicking 'add card' and typing in the text field. To delete a card, you can click the item, a modal will pop up with the option to edit or delete the card. 
 
 ## Prerequisites
 
