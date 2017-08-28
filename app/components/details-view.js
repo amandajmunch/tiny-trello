@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     toggleModal() {
       this.sendAction('toggleModal');
     },
-    toggleEditState(element) {
+    toggleEdit(element) {
       if (element === 'name') {
         this.toggleProperty('editName');
       } else if (element === 'description') {
@@ -26,9 +26,7 @@ export default Ember.Component.extend({
           item.save();
           this.set('newItem', {});
         });
-
       }
-
     },
     editItemDescription(newItem, id) {
       if (newItem.description) {
@@ -40,7 +38,6 @@ export default Ember.Component.extend({
           item.save();
           this.set('newItem', {});
         });
-
       }
     },
     deleteItem(item) {

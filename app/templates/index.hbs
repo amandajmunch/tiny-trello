@@ -2,7 +2,7 @@
   {{#each model as |list|}}
     {{trello-list
       list=list
-      modalEnabled=modalEnabled
+      modalActive=modalActive
       newItem=newItem
       selectItem='selectItem'
       createItem='createItem'}}
@@ -12,7 +12,7 @@
 
 </ul>
 
-{{#if modalEnabled}}
+{{#if modalActive}}
 
   {{details-view
     selectedItem=selectedItem

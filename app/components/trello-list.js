@@ -11,8 +11,7 @@ export default Ember.Component.extend({
       this.sendAction('selectItem', item);
     },
     deleteList: function(list) {
-      let id = list.id;
-      let listToDelete = this.get('store').peekRecord('list', id);
+      let listToDelete = this.get('store').peekRecord('list', list.id);
       listToDelete.destroyRecord();
     }
   }

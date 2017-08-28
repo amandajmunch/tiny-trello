@@ -51,15 +51,11 @@ html {
   padding-left: 6vh;
 }
 
-// .todo-list .delete span {
-//   cursor: pointer;
-// }
-
-.todo-list .delete span:hover {
+.trello-list .delete span:hover {
   color: #965f62;
 }
 
-#detail-view {
+#details-view {
   position: fixed;
   top: 0;
   left: 0;
@@ -67,12 +63,12 @@ html {
   right: 0;
 }
 
-#detail-view .name-change {
+#details-view .name-change {
   height: 20px;
 }
 
-.todo-list {
-  min-height: 250px;
+.trello-list {
+  min-height: 20vh;
 }
 
 .modal-fade {
@@ -94,29 +90,20 @@ html {
   position: absolute;
   top: 0;
   width: 100%;
-  height:30px;
+  height:6vh;
   text-align: center;
   border-bottom: 2px solid black;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
   background-color: #fb9fa4;
   color: #fff;
 }
 
-// .modal-title span {
-//   cursor: pointer;
-// }
-
 .modal-title span:hover {
-  color: #000;
+  color: #965f62;
 }
 
 .modal-body {
-  margin-top: 40px;
+  margin-top: 6vh;
 }
-
-// .modal-body {
-//   cursor: pointer;
-// }
-
 

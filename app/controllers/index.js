@@ -3,10 +3,10 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   newItem: {},
   selectedItem: {},
-  modalEnabled: false,
+  modalActive: false,
   actions: {
     toggleModal() {
-      this.toggleProperty('modalEnabled');
+      this.toggleProperty('modalActive');
     },
     createItem(newItem, listId) {
       if (newItem.name) {
@@ -26,7 +26,7 @@ export default Ember.Controller.extend({
     },
     selectItem(item) {
       this.set('selectedItem', item);
-      this.toggleProperty('modalEnabled');
+      this.toggleProperty('modalActive');
     },
     deleteItem(item) {
       let id = item.id;

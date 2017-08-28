@@ -1,8 +1,7 @@
 <!-- https://v4-alpha.getbootstrap.com/components/modal/ -->
-<div id='detail-view'>
+<div id='details-view'>
   <div {{action 'toggleModal'}} class='modal-fade'></div>
   <div class='panel panel-info modal-box'>
-
     <div class='panel-heading modal-title'>
       <div class='pull-left'>
         {{#if editName}}
@@ -11,7 +10,7 @@
             {{input class='name-change form-control' value=newItem.name placeholder='Item name'}}
             </form>
         {{else}}
-          <span {{action 'toggleEditState' 'name'}}>{{selectedItem.name}}</span>
+          <span {{action 'toggleEdit' 'name'}}>{{selectedItem.name}}</span>
         {{/if}}
       </div>
       <div class='pull-right'>
@@ -21,20 +20,15 @@
     </div>
 
     <div class='panel-body modal-body'>
-      <p>
-        <i>Click the name above or description below to edit.</i>
-      </p>
+      <p><i>Click the name above or description below to edit</i></p>
 
       {{#if editDescription}}
-        <form {{action 'editItemDescription' newItem selectedItem.id on='submit'}}
-          id='newDesc'>
-          {{input class='form-control' value=newItem.description placeholder='Please enter item description here.'}}
+        <form {{action 'editItemDescription' newItem selectedItem.id on='submit'}}>
+          {{input class='form-control' value=newItem.description placeholder='Enter item description here.'}}
         </form>
-
       {{else}}
-        <span {{action 'toggleEditState' 'description'}}>{{selectedItem.description}}</span>
+        <span {{action 'toggleEdit' 'description'}}>{{selectedItem.description}}</span>
       {{/if}}
-
     </div>
   </div>
 

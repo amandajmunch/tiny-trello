@@ -2,6 +2,12 @@
 
 This is an Ember version of Trello in small format. The user should be able to add a card to the board by clicking 'add card' and typing in the text field. To delete a card, you can click the item, a modal will pop up with the option to edit or delete the card. 
 
+I followed along with a few tutorials such as yoember.com, which inspired me to check out Bootstrap and use it with Ember. Originally, I wanted to go with Material Design, but perhaps in the future. 
+
+I'm used to using Flexbox, but Bootstrap allowed a great and clean grid system for each component. I especially enjoyed 'pull-right' and 'pull-left' instead of using justify-content. These were all new things for me to explore, but taught me a lot.
+
+While it doesn't pass every test, it does function, so that is something I have to work through.
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
