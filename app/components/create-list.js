@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   store: inject.service(),
   actions: {
     createList(newList) {
-      if (newList.name) {
+      if(newList.name) {
         let list = this.get('store').createRecord('list', {
           name: newList.name
         });

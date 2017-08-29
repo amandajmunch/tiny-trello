@@ -9,7 +9,7 @@ export default Ember.Controller.extend({
       this.toggleProperty('modalActive');
     },
     createItem(newItem, listId) {
-      if (newItem.name) {
+      if(newItem.name) {
         let thisNewItem = this.store.createRecord('item', {
           name: newItem.name,
           description: 'Click here to add a description.'

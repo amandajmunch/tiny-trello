@@ -10,14 +10,14 @@ export default Ember.Component.extend({
       this.sendAction('toggleModal');
     },
     toggleEdit(element) {
-      if (element === 'name') {
+      if(element === 'name') {
         this.toggleProperty('editName');
       } else if (element === 'description') {
         this.toggleProperty('editDescription');
       }
     },
     editItemName(newItem, id) {
-      if (newItem.name) {
+      if(newItem.name) {
         this.toggleProperty('editName');
         let itemToChange = this.get('store').findRecord('item', id);
 
@@ -29,7 +29,7 @@ export default Ember.Component.extend({
       }
     },
     editItemDescription(newItem, id) {
-      if (newItem.description) {
+      if(newItem.description) {
         this.toggleProperty('editDescription');
         let itemToChange = this.get('store').findRecord('item', id);
 
@@ -45,5 +45,4 @@ export default Ember.Component.extend({
       this.sendAction('deleteItem', item);
     }
   }
-
 });
