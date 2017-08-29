@@ -15,8 +15,8 @@ export default Ember.Controller.extend({
           description: 'Click here to add a description.'
         });
 
-        let listToAssociate = this.store.findRecord('list', listId);
-        listToAssociate.then(function(list) {
+        let listToUse = this.store.findRecord('list', listId);
+        listToUse.then(function(list) {
           list.get('items').then(function(items) {
             items.pushObject(thisNewItem);
             items.save();

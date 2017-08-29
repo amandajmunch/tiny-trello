@@ -6,7 +6,7 @@ I followed along with a few tutorials such as yoember.com, which inspired me to 
 
 I'm used to using Flexbox, but Bootstrap allowed a great and clean grid system for each component. I especially enjoyed 'pull-right' and 'pull-left' instead of using justify-content. These were all new things for me to explore, but taught me a lot.
 
-While it doesn't pass every test, it does function, so that is something I have to work through.
+I will have to work through the tests, as there are a few errors.
 
 ## Prerequisites
 
