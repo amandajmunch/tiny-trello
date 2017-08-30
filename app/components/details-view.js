@@ -1,6 +1,6 @@
 import Ember from 'ember';
 const { inject } = Ember;
-
+// toggle modal, toggle edit in the modal, delete option of item
 export default Ember.Component.extend({
   store: inject.service(),
   editName: false,

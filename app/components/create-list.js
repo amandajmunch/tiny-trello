@@ -1,6 +1,6 @@
 import Ember from 'ember';
 const { inject } = Ember;
-
+// creating a new list and if a name is inputed, save it into the record
 export default Ember.Component.extend({
   store: inject.service(),
   actions: {

@@ -1,5 +1,5 @@
 import Ember from 'ember';
-
+// toggling input field if adding a new item to a list
 export default Ember.Component.extend({
   input: false,
   actions: {

@@ -5,11 +5,13 @@
       <div class='panel-heading modal-title'>
         <div class='pull-left'>
           {{#if editName}}
+          <!-- if editing name, have form and input available -->
             <form {{action 'editItemName' newItem selectedItem.id on='submit'}}
               id='newTitle'>
               {{input class='name-change form-control' value=newItem.name placeholder='Item name'}}
               </form>
           {{else}}
+          <!-- otherwise, toggle edit function -->
             <span {{action 'toggleEdit' 'name'}}>{{selectedItem.name}}</span>
           {{/if}}
         </div>
@@ -21,12 +23,13 @@
 
     <div class='panel-body modal-body'>
       <p><i>Click the name or description to edit</i></p>
-
+      <!-- if description is being edited, have form for submit and input available -->
       {{#if editDescription}}
         <form {{action 'editItemDescription' newItem selectedItem.id on='submit'}}>
           {{input class='form-control' value=newItem.description placeholder='Enter item description here.'}}
         </form>
       {{else}}
+      <!-- otherwise, toggle the edit option in modal's description -->
         <span {{action 'toggleEdit' 'description'}}>{{selectedItem.description}}</span>
       {{/if}}
     </div>

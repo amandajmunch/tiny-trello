@@ -1,4 +1,5 @@
 <ul>
+<!-- mapping through each model (list, item) for the board -->
   {{#each model as |list|}}
     {{trello-list
       list=list
@@ -11,7 +12,7 @@
   {{create-list newList=model createList='createList'}}
 
 </ul>
-
+<!-- if the modal is active, show detail view, have toggle modal option etc -->
 {{#if modalActive}}
 
   {{details-view

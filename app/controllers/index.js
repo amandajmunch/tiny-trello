@@ -1,5 +1,5 @@
 import Ember from 'ember';
-
+// toggle the modal, targeting the correct list of item creation, deleting an item by targeting item id
 export default Ember.Controller.extend({
   newItem: {},
   selectedItem: {},

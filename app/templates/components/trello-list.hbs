@@ -10,6 +10,8 @@
     <div class='panel-body'>
       <div class='list-group'>
 
+         <!-- mapping through each item in the list -->
+
         {{#each list.items as |item index|}}
           {{trello-item item=item selectItem='selectItem'}}
         {{/each}}

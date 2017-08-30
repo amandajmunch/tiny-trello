@@ -1,6 +1,6 @@
 import Ember from 'ember';
 const { inject } = Ember;
-
+// creating an item on a list or deleting a list
 export default Ember.Component.extend({
   store: inject.service(),
   actions: {

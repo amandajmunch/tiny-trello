@@ -1,4 +1,7 @@
 <p class='form-group'>
+
+<!-- if input is active, create new item with on active listId -->
+
   {{#if input}}
     <div class='input-group'>
       <form {{action 'createItem' newItem listId on='submit'}} id='newItem'>
@@ -8,6 +11,8 @@
         <span class='glyphicon glyphicon-remove' aria-hidden='true'></span>
       </span>
     </div>
+
+<!-- otherwise, have add button active -->
 
   {{else}}
     <button {{action 'editing'}} class='btn btn-primary'>
